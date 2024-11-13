@@ -5,6 +5,8 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
 
     if (name && message) {
         document.getElementById('response').textContent = `Obrigado pelo feedback, ${name}!`;
+        document.getElementById('name').value = '';
+        document.getElementById('message').value = '';
     } else {
         document.getElementById('response').textContent = 'Por favor, preencha todos os campos.';
     }
